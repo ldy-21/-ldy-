@@ -13,21 +13,21 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // 图片数组，存放所有动态图片的路径
 const images = [
-    'images/1.gif',
-    'images/2.gif',
-    'images/3.gif',
-    'images/4.gif',
-    'images/5.gif',
-    'images/6.gif',
-    'images/7.gif',
-    'images/8.gif',
-    'images/9.gif',
-    'images/10.gif',
-    'images/10.gif',
-    'images/10.gif',
-    'images/10.gif',
-    'images/10.gif',
-    'images/10.gif',
+    '1.gif',
+    '2.gif',
+    '3.gif',
+    '4.gif',
+    '5.gif',
+    '6.gif',
+    '7.gif',
+    '8.gif',
+    '9.gif',
+    '10.gif',
+    '10.gif',
+    '10.gif',
+    '10.gif',
+    '10.gif',
+    '10.gif',
     // 继续添加更多图片路径
 ];
 
