@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一个互动页面">
+    <title>愿意吗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img
+                id="mainImage"
+                src="images/initial.gif"
+                alt="互动页面的动态图片"
+                loading="lazy"
+                decoding="async"
+            >
+            <h1 id="question">你愿意接受小一二的爱吗？😳</h1>
+        </div>
+        <div class="buttons">
+            <button id="yes">愿意</button>
+            <button id="no">不愿意</button>
+        </div>
+    </div>
+
+    <!-- 结束画面 -->
+    <div id="ending" aria-hidden="true">
+        <p id="endingText">！！！最爱你了！！！（>w<）❤</p>
+        <img
+            id="endingImage"
+            src="images/ending.jpg"
+            alt="结束画面图片"
+            loading="lazy"
+            decoding="async"
+        >
+    </div>
+
+    <audio
+        id="clickSound"
+        src="sounds/click.mp3"
+        type="audio/mpeg"
+        preload="auto"
+    />
+   <!-- 背景音频 -->
+    <audio id="backgroundAudio" loop preload="auto" autoplay>
+        <source src="sounds/background.mp3" type="audio/mpeg">
+        您的浏览器不支持 audio 标签。
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>

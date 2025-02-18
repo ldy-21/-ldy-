@@ -1,0 +1,183 @@
+/* 全局重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body 主体样式 */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+/* 主要内容容器样式 */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+    max-width: 800px;
+    width: 90%;
+    z-index: 3;
+}
+
+/* 内容居中样式 */
+.content {
+    position: relative;
+    z-index: 4;
+}
+
+/* 主图片样式 */
+#mainImage {
+    width: 180px;
+    height: auto;
+    margin-bottom: 2rem;
+    transition: all 0.5s ease;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 问题文字样式 */
+#question {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    min-height: 36px;
+}
+
+/* 按钮容器样式 */
+.buttons {
+    position: relative;
+    z-index: 2;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* 按钮样式 */
+button {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+}
+
+/* 按钮悬停效果 */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 按钮点击效果 */
+button:active {
+    transform: translateY(0);
+}
+
+/* "愿意" 按钮样式 */
+#yes {
+    background: #4CAF50;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* "愿意" 按钮悬停效果 */
+#yes:hover {
+    background: #45a049;
+}
+
+/* "不愿意" 按钮样式 */
+#no {
+    background: #f44336;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* "不愿意" 按钮悬停效果 */
+#no:hover {
+    background: #e53935;
+}
+
+/* 结束状态容器样式 */
+#ending {
+    display: none;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* 结束文字样式 */
+#endingText {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 1rem;
+}
+
+/* 结束图片样式 */
+#endingImage {
+    width: 50vw;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 淡入动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式设计（针对屏幕宽度小于 768px 的设备） */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    #mainImage {
+        width: 80px;
+    }
+
+    #question {
+        font-size: 1rem;
+    }
+
+    #endingImage {
+        width: 90vw;
+        max-width: 300px;
+    }
+}
